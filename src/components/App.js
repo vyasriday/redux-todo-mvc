@@ -20,8 +20,14 @@ const App = props => {
       <button style={styles} onClick={() => props.getTodos()}>
         Get Todos
       </button>
-      <TodosList />
-      <TodoDetail />
+      <div
+        style={{
+          display: 'flex'
+        }}
+      >
+        <TodosList />
+        <TodoDetail />
+      </div>
     </div>
   );
 };
